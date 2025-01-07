@@ -1,0 +1,348 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    height: 50px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+}
+
+/* Static Banner */
+.static-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.static-banner img {
+    width: 50%;
+    height: auto;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/* Prices Section */
+.prices {
+    background-color: #f7f7f7;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.price-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.price-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.price-card h3 {
+    margin-bottom: 10px;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.instructors {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.instructor-card {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    perspective: 1000px;
+    text-align: center;
+}
+
+.instructor-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s;
+}
+
+.instructor-card:hover img {
+    transform: rotateY(180deg);
+}
+
+.instructor-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #388e3c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: transform 0.6s;
+}
+
+.instructor-card:hover .instructor-info {
+    transform: rotateY(0deg);
+}
+
+/* Partner Section Styling */
+.partner-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.partner-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.partner-card img {
+    max-height: 100px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.partner-card p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Schedule Section */
+.schedule h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Accordion Styles */
+.schedule-section {
+    margin-bottom: 15px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-section h3 {
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #388e3c;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0;
+}
+
+.schedule-section-content {
+    display: none;
+    padding: 10px;
+}
+
+.schedule-section-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.schedule-section-content th, .schedule-section-content td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.schedule-section-content th {
+    background-color: #f4f4f4;
+}
+
+.schedule-section-content td {
+    background-color: #fafafa;
+}
+
+
+/* Стил за акордеоните */
+.schedule-section {
+    margin-bottom: 15px;
+}
+
+.schedule-section h3 {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.schedule-section table {
+    width: 100%;
+    border-collapse: collapse;
+    display: none; /* По подразбиране, таблицата е скрита */
+    margin-top: 10px;
+}
+
+.schedule-section table, .schedule-section th, .schedule-section td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.schedule-section th {
+    background-color: #f2f2f2;
+}
+
+schedule-section table td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Заглавие на секцията "Наши партньори" */
+#partners .partner-section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    position: relative;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+
+/* Стил за партньорските карти */
+.partner-card {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.partner-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.partner-card p {
+    margin: 5px 0;
+}
+
+
+/* Footer Styles *//* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 5px;
+    background-color: #388e3c; /* Зелен фон */
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    border-top: 4px solid #FF0000; /* червен бордер за разделяне */
+}
+
+footer a {
+    color: #fff; /* Бял текст за линковете */
+    text-decoration: none; /* Премахване на подчертаването */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Подчертаване при задържане на курсора */
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ddd; /* По-мек сив текст */
+}
+
+footer .footer-logo img {
+    max-width: 100px; /* Ограничава размера на логото */
+    margin-bottom: 10px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+footer .social-icons img {
+    width: 30px; /* Размер на иконите */
+    height: 30px;
+    transition: transform 0.3s; /* Плавен преход за трансформация */
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.1); /* Увеличаване при задържане на курсора */
